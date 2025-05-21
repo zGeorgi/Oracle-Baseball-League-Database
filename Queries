@@ -1,0 +1,101 @@
+-- JOIN and GROUP BY HAVING, WITH COMPARISON OPERATORS
+SELECT c.first_name || ' '|| c.last_name "Customer Name", o.order_id, SUM(op.quantity * p.price) AS total_order_value
+FROM G_Customers c
+JOIN G_Orders o ON c.customer_id = o.customer_id
+JOIN G_Order_Products op ON o.order_id = op.order_id
+JOIN G_Products p ON op.product_id = p.product_id
+GROUP BY c.first_name, c.last_name, o.order_id
+HAVING SUM(op.quantity * p.price) > 100;
+
+
+-- SINGLE ROW FUNCTIONS WITH LOGCAL OPERATORS
+SELECT UPPER(first_name) "FIRST NAME", UPPER(last_name) "LAST NAME", post_code, phone
+FROM G_Sales_Representatives
+WHERE is_active = 'Y' AND post_code IN ('AB12 3CD', 'CD34 5EF');
+
+SELECT order_id, customer_id
+FROM G_Orders
+WHERE MOD(order_id, 2) = 1;
+
+
+SELECT COUNT(DISTINCT o.order_id) AS total_orders,
+       MAX(op.quantity * p.price) AS max_order_value,
+       MIN(op.quantity * p.price) AS min_order_value,
+       ROUND(AVG(op.quantity * p.price), 2) AS avg_order_value,
+       SUM(op.quantity * p.price) AS total_revenue
+FROM G_Orders o
+JOIN G_Order_Products op ON o.order_id = op.order_id
+JOIN G_Products p ON op.product_id = p.product_id;
+
+-- Group products by category and calculate total stock value
+SELECT p.name AS product_name, SUM(i.units_in_stock * i.cost_per_unit) AS total_stock_value
+FROM G_Products p
+JOIN G_Inventory_Lists i ON p.product_id = i.product_id
+GROUP BY p.name;
+
+
+-- List teams with more than 10 players eligible for a discount
+SELECT t.name AS team_name, COUNT(t.team_id) AS total_teams
+FROM G_Teams t
+JOIN G_Discounts d ON t.discount_id = d.discount_id
+GROUP BY t.name
+HAVING COUNT(t.team_id) > 10;
+
+
+SELECT first_name, last_name
+FROM G_Customers
+WHERE customer_id = (
+    SELECT customer_id
+    FROM G_Orders
+    WHERE order_date = (SELECT MAX(order_date) FROM G_Orders)
+);
+
+SELECT name "Product name"
+FROM G_Products
+WHERE product_id IN (
+    SELECT product_id
+    FROM G_Order_Products
+    WHERE order_id IN (
+        SELECT order_id
+        FROM G_Orders
+        WHERE customer_id = 9
+    )
+);
+
+SELECT c.first_name, c.last_name, o.order_id, SUM(op.quantity * p.price) AS total_order_value
+FROM G_Customers c
+JOIN G_Orders o ON c.customer_id = o.customer_id
+JOIN G_Order_Products op ON o.order_id = op.order_id
+JOIN G_Products p ON op.product_id = p.product_id
+GROUP BY c.first_name, c.last_name, o.order_id
+HAVING c.first_name LIKE 'A%' AND SUM(op.quantity * p.price) > 500;
+
+
+SELECT ROUND(AVG(t.number_of_players), 3) AS avg_players,
+       MIN(t.number_of_players) AS min_players,
+       MAX(t.number_of_players) AS max_players,
+       SUM(t.number_of_players) AS total_players
+FROM G_Teams t;
+
+
+SELECT order_id
+FROM G_Orders
+WHERE order_id IN (
+    SELECT DISTINCT op.order_id
+    FROM G_Order_Products op
+    JOIN G_Products p ON op.product_id = p.product_id
+    WHERE p.name = 'Shorts'
+);
+
+
+INSERT INTO G_Discounts (description, percentage, min_players)
+VALUES ('Super Saver Discount', 15, 25);
+
+INSERT INTO G_Discounts (description, percentage, min_players)
+VALUES ('Large Team Discount', 9, 20);
+
+INSERT INTO G_Discounts (description, percentage, min_players)
+VALUES ('Small Team Discount', 5, 10);
+
+INSERT INTO G_Discounts (description, percentage, min_players)
+VALUES ('Medium Team Discount', 8, 15);
