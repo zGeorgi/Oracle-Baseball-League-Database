@@ -1,0 +1,474 @@
+-- POPULATE CUSTOERS TABLE
+
+INSERT ALL
+	INSERT INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+	VALUES ('John', 'Doe', '123 Elm Street', 'AB12 3CD', 'john.doe@example.com', '07123456789', 'individual', NULL);
+	INSERT INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+	VALUES ('Jane', 'Smith', '456 Oak Avenue', 'CD34 5EF', 'jane.smith@example.com', '07123456790', 'individual', 1);
+	INSERT INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+	VALUES ('Alice', 'Johnson', '789 Maple Lane', 'EF56 7GH', 'alice.johnson@example.com', '07123456791', 'team', 2);
+	INSERT INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+	VALUES ('Bob', 'Williams', '101 Pine Road', 'GH78 9IJ', 'bob.williams@example.com', '07123456792', 'team', 3);
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Emily', 'Brown', '10 King Street', 'AB10 1XY', 'emily.brown@example.com', '07111111111', 'individual', NULL)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('James', 'Wilson', '22 Queen Road', 'CD20 2YZ', 'james.wilson@example.com', '07222222222', 'individual', 1)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Sophia', 'Taylor', '35 Elm Avenue', 'EF30 3WX', 'sophia.taylor@example.com', '07333333333', 'team', 2)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Michael', 'Anderson', '47 Pine Lane', 'GH40 4UV', 'michael.anderson@example.com', '07444444444', 'individual', 3)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Isabella', 'Thomas', '59 Maple Drive', 'AB50 5TS', 'isabella.thomas@example.com', '07555555555', 'team', NULL)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Daniel', 'Harris', '71 Oak Road', 'CD60 6RQ', 'daniel.harris@example.com', '07666666666', 'individual', 1)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Mia', 'Martin', '83 Birch Way', 'EF70 7QP', 'mia.martin@example.com', '07777777777', 'team', 2)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('William', 'Jackson', '95 Cedar Street', 'GH80 8PO', 'william.jackson@example.com', '07888888888', 'individual', 3)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Olivia', 'Lee', '107 Ash Avenue', 'AB90 9NM', 'olivia.lee@example.com', '07999999999', 'team', NULL)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Benjamin', 'White', '119 Fir Lane', 'CD10 0LM', 'benjamin.white@example.com', '07101010101', 'individual', 1)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Ava', 'Green', '131 Spruce Road', 'EF20 1KL', 'ava.green@example.com', '07202020202', 'team', 2)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Lucas', 'Hall', '143 Poplar Drive', 'GH30 2JK', 'lucas.hall@example.com', '07303030303', 'individual', 3)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Charlotte', 'Allen', '155 Cypress Lane', 'AB40 3IJ', 'charlotte.allen@example.com', '07404040404', 'team', NULL)
+    INTO g_Customers (first_name, last_name, street, post_code, email, phone, customer_type, rep_id)
+    VALUES ('Henry', 'Young', '167 Willow Street', 'CD50 4HI', 'henry.young@example.com', '07505050505', 'individual', 1)
+SELECT * FROM DUAL;
+
+
+--POPUULATE SALES REPRESENTATIVES TABLE
+INSERT ALL
+    INTO g_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('John', 'Smith', '1 Elm Street', 'AB12 3CD',  'john.smith@example.com', '07123456789', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Jane', 'Doe', '2 Oak Road', 'CD34 5EF', 'jane.doe@example.com', '07234567890', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Michael', 'Johnson', '3 Pine Avenue', 'EF56 7GH', 'michael.johnson@example.com', '07345678901', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Emily', 'Brown', '4 Maple Lane', 'GH78 9IJ', 'emily.brown@example.com', '07456789012', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Daniel', 'White', '5 Birch Way', 'IJ90 1KL', 'daniel.white@example.com', '07567890123', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Sophia', 'Green', '6 Cedar Drive', 'KL12 3MN', 'sophia.green@example.com', '07678901234', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Benjamin', 'Taylor', '7 Spruce Road', 'MN34 5OP', 'benjamin.taylor@example.com', '07789012345', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Olivia', 'Clark', '8 Cypress Lane', 'OP56 7QR', 'olivia.clark@example.com', '07890123456', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Henry', 'Allen', '9 Poplar Street', 'QR78 9ST', 'henry.allen@example.com', '07901234567', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Charlotte', 'Harris', '10 Willow Avenue', 'ST90 1UV', 'charlotte.harris@example.com', '07109876543', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Lucas', 'Young', '11 Ash Road', 'UV12 3WX', 'lucas.young@example.com', '07298765432', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Amelia', 'Lewis', '12 Fir Lane', 'WX34 5YZ', 'amelia.lewis@example.com', '07387654321', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('William', 'Walker', '13 King Street', 'YZ56 7AB', 'william.walker@example.com', '07476543210', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Ava', 'Hall', '14 Queen Avenue', 'AB78 9CD', 'ava.hall@example.com', '07565432109', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Ethan', 'Moore', '15 Prince Road', 'CD90 1EF', 'ethan.moore@example.com', '07654321098', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Isabella', 'Hill', '16 Duke Lane', 'EF12 3GH', 'isabella.hill@example.com', '07743210987', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('James', 'Scott', '17 Earl Drive', 'GH34 5IJ', 'james.scott@example.com', '07832109876', 'Y')
+    INTO Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Grace', 'Adams', '18 Noble Way', 'IJ56 7KL', 'grace.adams@example.com', '07921098765', 'Y')
+SELECT * FROM DUAL;
+
+INSERT ALL
+    INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('John', 'Smith', '1 Elm Street', 'AB12 3CD', 'john.smith@example.com', '07123456789', 'Y')
+    INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Jane', 'Doe', '2 Oak Road', 'CD34 5EF', 'jane.doe@example.com', '07234567890', 'Y')
+    INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+	
+    VALUES ('Michael', 'Johnson', '3 Pine Avenue', 'EF56 7GH', 'michael.johnson@example.com', '07345678901', 'Y')
+    
+INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Emily', 'Brown', '4 Maple Lane', 'GH78 9IJ', 'emily.brown@example.com', '07456789012', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Daniel', 'White', '5 Birch Way', 'IJ90 1KL', 'daniel.white@example.com', '07567890123', 'Y')
+   
+   INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Sophia', 'Green', '6 Cedar Drive', 'KL12 3MN', 'sophia.green@example.com', '07678901234', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Benjamin', 'Taylor', '7 Spruce Road', 'MN34 5OP', 'benjamin.taylor@example.com', '07789012345', 'Y')
+   
+   INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Olivia', 'Clark', '8 Cypress Lane', 'OP56 7QR', 'olivia.clark@example.com', '07890123456', 'Y')
+   
+   INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Henry', 'Allen', '9 Poplar Street', 'QR78 9ST', 'henry.allen@example.com', '07901234567', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Charlotte', 'Harris', '10 Willow Avenue', 'ST90 1UV', 'charlotte.harris@example.com', '07109876543', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Lucas', 'Young', '11 Ash Road', 'UV12 3WX', 'lucas.young@example.com', '07298765432', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Amelia', 'Lewis', '12 Fir Lane', 'WX34 5YZ', 'amelia.lewis@example.com', '07387654321', 'Y')
+   
+   INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('William', 'Walker', '13 King Street', 'YZ56 7AB', 'william.walker@example.com', '07476543210', 'Y')
+   
+   INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Ava', 'Hall', '14 Queen Avenue', 'AB78 9CD', 'ava.hall@example.com', '07565432109', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Ethan', 'Moore', '15 Prince Road', 'CD90 1EF', 'ethan.moore@example.com', '07654321098', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Isabella', 'Hill', '16 Duke Lane', 'EF12 3GH', 'isabella.hill@example.com', '07743210987', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('James', 'Scott', '17 Earl Drive', 'GH34 5IJ', 'james.scott@example.com', '07832109876', 'Y')
+    
+	INTO G_Sales_Representatives (first_name, last_name, street, post_code, email, phone, is_active)
+    VALUES ('Grace', 'Adams', '18 Noble Way', 'IJ56 7KL', 'grace.adams@example.com', '07921098765', 'Y')
+SELECT * FROM DUAL;
+
+
+--POPULATE TEAMS TABLE
+INSERT ALL
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Red Wolves', 15, 1, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Blue Sharks', 12, 2, 1)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Green Hawks', 18, 3, NULL)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Golden Bears', 20, 4, 3)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Silver Foxes', 16, 5, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Black Panthers', 14, 6, 1)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('White Tigers', 17, 7, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Purple Eagles', 19, 8, 3)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Orange Lions', 13, 9, NULL)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Yellow Falcons', 18, 10, 1)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Gray Wolves', 16, 11, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Crimson Bulls', 20, 12, 3)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Cobalt Owls', 15, 13, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Amber Jaguars', 12, 14, 1)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Ivory Elephants', 14, 15, 2)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Scarlet Dragons', 19, 16, 3)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Emerald Snakes', 17, 17, NULL)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Golden Eagles', 13, 18, 1)
+    INTO Teams (name, number_of_players, customer_id, discount_id)
+    VALUES ('Sapphire Dolphins', 20, 19, 2)
+SELECT * FROM DUAL;
+
+
+-- POPLATE DISCOUNTS TABLE
+INSERT ALL
+    INTO Discounts (description, percentage, min_players)
+    VALUES ('Small Team Discount', 5.00, 10) -- 5% discount for teams with at least 10 players
+    INTO Discounts (description, percentage, min_players)
+    VALUES ('Medium Team Discount', 10.00, 15) -- 10% discount for teams with at least 15 players
+    INTO Discounts (description, percentage, min_players)
+    VALUES ('Large Team Discount', 15.00, 20) -- 15% discount for teams with at least 20 players
+    INTO Discounts (description, percentage, min_players)
+    VALUES ('Super Saver Discount', 20.00, 25) -- 20% discount for teams with at least 25 players
+    INTO Discounts (description, percentage, min_players)
+    VALUES ('Mega Saver Discount', 25.00, 30) -- 25% discount for teams with at least 30 players
+SELECT * FROM DUAL;
+
+
+-- POPLATE INVENTORY LISTS TABLE 
+-- COST_PER_ITEM COLUNM CAN BE ADDED
+
+ 
+     INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (50.00, 100, 10, 1) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (275.00, 50, 5, 2) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (120.00, 70, 6, 9)
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (140.00, 200, 10, 14) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (180.00, 150, 9, 15) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (160.00, 80, 8, 16) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (60.00, 120, 12, 17) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (40.00, 300, 20, 18) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (200.00, 40, 4, 19) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (300.00, 30, 3, 15) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (500.00, 20, 2, 13) 
+    
+   INSERT INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (150.00, 70, 5, 21) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (80.00, 150, 10, 13) 
+    
+ INSERT   INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (110.00, 100, 10, 14) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (48.00, 200, 16, 15) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (75.00, 250, 25, 16) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (240.00, 60, 6, 17) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (210.00, 80, 7, 18) 
+    
+ INSERT   INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (360.00, 90, 9, 19) 
+    
+  INSERT  INTO G_Inventory_Lists (cost_per_unit, units_in_stock, items_per_unit, product_id)
+    VALUES (25.00, 500, 50, 20) 
+    
+
+-- POPULATE PRODUCTS TABLES 
+
+   INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Baseball', 'Official size and weight baseball', 5.00, 500, 'Y')
+   
+   INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Cleats', 'Durable cleats for baseball players', 50.00, 150, 'Y')
+    
+   INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Gloves', 'High-quality leather baseball gloves', 30.00, 200, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Shirts', 'Breathable cotton baseball shirts', 15.00, 300, 'Y')
+    
+  INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('T-Shirts', 'Custom screen-printed team t-shirts', 20.00, 250, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Shorts', 'Lightweight baseball shorts', 18.00, 100, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Socks', 'Moisture-wicking baseball socks', 10.00, 400, 'Y')
+  
+ INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Caps', 'Adjustable baseball caps with logo', 12.00, 350, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Baseball Bats', 'Aluminum baseball bats', 75.00, 50, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Catcher Helmets', 'Protective catcher helmets', 80.00, 40, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Catcher Gear Sets', 'Complete catcher gear sets', 250.00, 30, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Batting Gloves', 'Grip-enhancing batting gloves', 25.00, 150, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Sliding Shorts', 'Padded sliding shorts for players', 35.00, 120, 'Y')
+    
+  INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Wristbands', 'Sweat-absorbing wristbands', 8.00, 500, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Water Bottles', 'Reusable BPA-free water bottles', 6.00, 600, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Training Cones', 'Durable training cones for drills', 20.00, 200, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Duffel Bags', 'Spacious duffel bags for equipment', 60.00, 90, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Scorecards', 'Official scorecards for games', 2.00, 1000, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Pitcher Training Set', 'Complete set for pitcher training', 150.00, 40, 'Y')
+   
+ INSERT  INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Baseball Nets', 'Portable practice nets for players', 100.00, 60, 'Y')
+   
+  INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Baseball Bases', 'Standard bases for gameplay', 25.00, 80, 'Y')
+    
+   INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Pitching Machine', 'Automated pitching machine', 1200.00, 10, 'Y')
+    
+   INSERT INTO G_Products (name, description, price, quantity_in_stock, is_active)
+    VALUES ('Team Flags', 'Customizable team flags', 40.00, 70, 'Y')
+
+
+
+   INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-01', 'YYYY-MM-DD'), 'Pending', 7)
+    
+   INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-02', 'YYYY-MM-DD'), 'Done', 8)
+  
+  INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-03', 'YYYY-MM-DD'), 'Cancelled', 9)
+  
+ INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-04', 'YYYY-MM-DD'), 'Pending', 8)
+  
+ INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-05', 'YYYY-MM-DD'), 'Done', 15)
+  
+ INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-06', 'YYYY-MM-DD'), 'Pending', 16)
+  
+ INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-07', 'YYYY-MM-DD'), 'Done', 17)
+  
+INSERT  INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-08', 'YYYY-MM-DD'), 'Cancelled', 8)
+  
+INSERT  INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-09', 'YYYY-MM-DD'), 'Pending', 19)
+  
+INSERT  INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-10', 'YYYY-MM-DD'), 'Done', 10)
+  
+ INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-11', 'YYYY-MM-DD'), 'Cancelled', 11)
+   
+  INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-12', 'YYYY-MM-DD'), 'Pending', 12)
+   
+ INSERT  INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-13', 'YYYY-MM-DD'), 'Done', 13)
+   
+  INSERT INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-14', 'YYYY-MM-DD'), 'Cancelled', 14)
+   
+ INSERT  INTO g_Orders (order_date, status, customer_id)
+    VALUES (TO_DATE('2024-12-15', 'YYYY-MM-DD'), 'Pending', 15)
+
+
+
+-- POPULATE ORDER Products 
+
+    INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (3, 1, 1) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (1, 2, 1) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (2, 13, 2) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (5, 14, 3) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (3, 15, 4) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (2, 16, 5) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (10, 17, 6) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (5, 18, 7) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (1, 19, 8) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (1, 16, 9) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (1, 18, 10) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (3, 14, 11) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (4, 13, 12) 
+    
+   INSERT INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (2, 14, 13) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (10, 15, 14) 
+    
+  INSERT  INTO g_Order_Products (quantity, product_id, order_id)
+    VALUES (6, 16, 15) 
+SELECT * FROM DUAL;
+
+
+-- POPULATE COMPLAINTS 
+
+
+     INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Delayed shipment', TO_DATE('2024-12-01', 'YYYY-MM-DD'), 1, 11)
+    
+     INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Wrong product delivered', TO_DATE('2024-12-02', 'YYYY-MM-DD'), 2, 12)
+    
+   INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Product damaged on arrival', TO_DATE('2024-12-03', 'YYYY-MM-DD'), 3, 13)
+    
+   INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Incomplete order received', TO_DATE('2024-12-04', 'YYYY-MM-DD'), 4, 14)
+    
+  INSERT  INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Order delivered to the wrong address', TO_DATE('2024-12-05', 'YYYY-MM-DD'), 5, 15)
+    
+   INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Late refund processing', TO_DATE('2024-12-06', 'YYYY-MM-DD'), 6, 16)
+    
+   INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Defective product received', TO_DATE('2024-12-07', 'YYYY-MM-DD'), 7, 18)
+    
+   INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Miscommunication on product availability', TO_DATE('2024-12-08', 'YYYY-MM-DD'), 8, 18)
+  
+ INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Excess shipping charges', TO_DATE('2024-12-09', 'YYYY-MM-DD'), 9, 19)
+   
+  INSERT INTO g_Complaints (description, complaint_date, order_id, sales_rep_id)
+    VALUES ('Unresponsive customer service', TO_DATE('2024-12-10', 'YYYY-MM-DD'), 10, 11)
+
+
+
+
+TRUNCATE TABLE Teams; 
+
+DELETE 
+FROM discounts 
+WHERE percentage = 25; 
